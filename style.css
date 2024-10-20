@@ -79,17 +79,17 @@ h3, h4 {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #f1f1f1; /* Light gray background */
-    position: fixed; /* Fix the footer at the bottom */
+    background-color: #f1f1f1; 
+    position: fixed; 
     left: 0;
     bottom: 0;
-    width: 100%; /* Full width */
-    font-family: Arial, sans-serif; /* Font style */
+    width: 100%; 
+    font-family: Arial, sans-serif; 
 }
 
 footer p {
-    margin: 0; /* Remove default margin */
-    color: #333; /* Dark gray text color */
+    margin: 0; 
+    color: #333; 
 }
 footer p a{
     text-decoration: none;

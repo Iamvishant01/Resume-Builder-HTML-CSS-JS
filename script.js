@@ -1,5 +1,5 @@
 function generateResume() {
-    // Get input values and display them in the resume preview
+    
     document.getElementById('display-name').textContent = document.getElementById('name').value;
     document.getElementById('display-email').textContent = `Email: ${document.getElementById('email').value}`;
     document.getElementById('display-phone').textContent = `Phone: ${document.getElementById('phone').value}`;
@@ -9,11 +9,11 @@ function generateResume() {
 }
 
 function downloadResume() {
-    // Get the resume content
+    
     const { jsPDF } = window.jspdf;
     const doc = new jsPDF();
     
-    // Add content to PDF
+   
     doc.text(20, 20, document.getElementById('display-name').textContent);
     doc.text(20, 30, document.getElementById('display-email').textContent);
     doc.text(20, 40, document.getElementById('display-phone').textContent);
@@ -24,6 +24,6 @@ function downloadResume() {
     doc.text(20, 90, "Skills:");
     doc.text(20, 100, document.getElementById('display-skills').textContent);
 
-    // Save the PDF
+    
     doc.save(document.getElementById('name').value + ' resume.pdf');
 }
