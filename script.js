@@ -25,5 +25,5 @@ function downloadResume() {
     doc.text(20, 100, document.getElementById('display-skills').textContent);
 
     // Save the PDF
-    doc.save(name + 'resume.pdf');
+    doc.save(document.getElementById('name').value + ' resume.pdf');
 }
