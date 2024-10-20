@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Simple Resume Builder - Vishant Netke</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Resume Builder</h1>
+        <div class="form-section">
+            <h2>Enter Your Details</h2>
+            <form id="resume-form">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" placeholder="Your Name">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="your.email@example.com">
+                
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" placeholder="123-456-7890">
+                
+                <label for="summary">Professional Summary:</label>
+                <textarea id="summary" placeholder="A brief summary about yourself"></textarea>
+                
+                <label for="experience">Work Experience:</label>
+                <textarea id="experience" placeholder="List your past job experiences"></textarea>
+                
+                <label for="skills">Skills:</label>
+                <input type="text" id="skills" placeholder="Skill 1, Skill 2, Skill 3">
+                
+                <button type="button" onclick="generateResume()">Generate Resume</button>
+                <button type="button" onclick="downloadResume()">Download as PDF</button>
+            </form>
+        </div>
+        
+        <div class="resume-section">
+            <h2>Your Resume Preview</h2>
+            <div id="resume" class="scrollable-content">
+                <h3 id="display-name">Your Name</h3>
+                <p id="display-email">Email: </p>
+                <p id="display-phone">Phone: </p>
+                <h4>Professional Summary</h4>
+                <p id="display-summary"></p>
+                <h4>Work Experience</h4>
+                <p id="display-experience"></p>
+                <h4>Skills</h4>
+                <p id="display-skills"></p>
+            </div>
+        </div>
+        <footer>
+            <p>made with ♥ by <a href="https://www.instagram.com/iamvishant01" target="_blank">Vishant Netke</a></p>
+        </footer>        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
